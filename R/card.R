@@ -27,6 +27,6 @@ ols_reg <- lm(Y1 ~ Y2 + X1)
 summary(ols_reg)
 
 #2SLS
-iv_reg = ivreg(Y1 ~ Y2 + X1 | X1 + X2)
+iv_reg <- ivreg(Y1 ~ Y2 + X1 | X1 + X2)
 summary(iv_reg)
 
